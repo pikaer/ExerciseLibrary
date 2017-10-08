@@ -142,7 +142,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\EndWeb\EndWebAreaRegistration.cs" />
     <Compile Include="Areas\HR\AreaAreaRegistration.cs" />
+    <Compile Include="Areas\Website\WebsiteAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -335,6 +337,8 @@
     <Content Include="Scripts\easyui\src\jquery.calendar.js.baiduyun.uploading.cfg" />
     <Content Include="Scripts\easyui\src\jquery.combobox.js.baiduyun.uploading.cfg" />
     <Content Include="Areas\HR\Views\web.config" />
+    <Content Include="Areas\EndWeb\Views\web.config" />
+    <Content Include="Areas\Website\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\easyui\easyloader.js" />
     <Content Include="Scripts\easyui\jquery-1.8.0.min.js" />
@@ -445,12 +449,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\EndWeb\Controllers\" />
+    <Folder Include="Areas\EndWeb\Models\" />
+    <Folder Include="Areas\EndWeb\Views\Shared\" />
     <Folder Include="Areas\HR\Controllers\" />
     <Folder Include="Areas\HR\Models\" />
     <Folder Include="Areas\HR\Views\Shared\" />
+    <Folder Include="Areas\Website\Controllers\" />
+    <Folder Include="Areas\Website\Models\" />
+    <Folder Include="Areas\Website\Views\Shared\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\easyui\demo\" />
-    <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
