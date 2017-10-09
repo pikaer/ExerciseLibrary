@@ -56,12 +56,13 @@
   <ItemGroup>
     <Compile Include="Common\Major.cs" />
     <Compile Include="Entity.cs" />
+    <Compile Include="Enum\EnumDifficulty.cs" />
     <Compile Include="Enum\EnumMajor.cs" />
     <Compile Include="HR\StaffInfo.cs" />
     <Compile Include="Library\Judge.cs" />
     <Compile Include="Library\Multiple.cs" />
     <Compile Include="Library\ShortAnswer.cs" />
-    <Compile Include="Library\Single.cs" />
+    <Compile Include="Library\SingleTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

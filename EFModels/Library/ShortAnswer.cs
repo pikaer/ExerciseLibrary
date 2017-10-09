@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EFModels.Enum;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -25,7 +26,11 @@ namespace EFModels.Library
         /// <summary>
         /// 试题难度
         /// </summary>
-        public String Difficulty { get; set; }
+        public EnumDifficulty Difficulty { get; set; }
+        /// <summary>
+        /// 创建人
+        /// </summary>
+        public Int32 CreaterId { get; set; }
         /// <summary>
         /// 最近修改人
         /// </summary>

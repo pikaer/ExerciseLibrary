@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EFModels.Enum;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 namespace EFModels.Library
 {
     [Table("Library_Single")]   //单选题
-    public class Single : Entity<int>
+    public class SingleTest : Entity<int>
     {
         /// <summary>
         /// 题目
@@ -45,7 +46,7 @@ namespace EFModels.Library
         /// <summary>
         /// 试题难度
         /// </summary>
-        public String Difficulty { get; set; }
+        public EnumDifficulty Difficulty { get; set; }
         /// <summary>
         /// 创建人
         /// </summary>
