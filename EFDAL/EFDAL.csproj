@@ -61,6 +61,7 @@
     <Compile Include="MapConfigurations\Library\MultipleConfiguration.cs" />
     <Compile Include="MapConfigurations\Library\ShortAnswerConfiguration.cs" />
     <Compile Include="MapConfigurations\Library\SingleTestConfiguration.cs" />
+    <Compile Include="Migrations\201710140019.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\DatabaseInitializer.cs" />
     <Compile Include="Migrations\MyContext.cs" />

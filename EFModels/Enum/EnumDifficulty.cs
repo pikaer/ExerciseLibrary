@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EFModels.Enum
 {
-    [FlagsAttribute]
+    [Flags]
     public enum EnumDifficulty
     {
         [Description("☆")]
