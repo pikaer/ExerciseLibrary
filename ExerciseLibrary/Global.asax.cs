@@ -23,8 +23,8 @@ namespace ExerciseLibrary
             MefDependencyResolver res = new MefDependencyResolver(new DisposableWrapperCatalog(catalog, true));
             DependencyResolver.SetResolver(res);
             //MiniProfilerEF6.Initialize();
-            //ApplicationService.Initialize();
-            DatabaseInitializer.Initialize();
+            //ApplicationService.Initialize();    在Service中
+            DatabaseInitializer.Initialize();   
 
         }
     }

@@ -55,12 +55,18 @@
     <Compile Include="IRepository\Library\IMultipleRepository.cs" />
     <Compile Include="IRepository\Library\IShortAnswerRepository.cs" />
     <Compile Include="IRepository\Library\ISingleTestRepository.cs" />
+    <Compile Include="IRepository\Sys\IMapOfFuncAndRoleRepository.cs" />
+    <Compile Include="IRepository\Sys\IOAFuncRepository.cs" />
+    <Compile Include="IRepository\Sys\ISysRoleRepository.cs" />
     <Compile Include="MapConfigurations\Common\MajorConfiguration.cs" />
     <Compile Include="MapConfigurations\HR\StaffInfoConfiguration.cs" />
     <Compile Include="MapConfigurations\Library\JudgeConfiguration.cs" />
     <Compile Include="MapConfigurations\Library\MultipleConfiguration.cs" />
     <Compile Include="MapConfigurations\Library\ShortAnswerConfiguration.cs" />
     <Compile Include="MapConfigurations\Library\SingleTestConfiguration.cs" />
+    <Compile Include="MapConfigurations\Sys\MapOfFuncAndRoleConfiguration.cs" />
+    <Compile Include="MapConfigurations\Sys\OAFuncConfiguration.cs" />
+    <Compile Include="MapConfigurations\Sys\SysRoleConfiguration.cs" />
     <Compile Include="Migrations\201710140019.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\DatabaseInitializer.cs" />
@@ -73,6 +79,9 @@
     <Compile Include="Repository\Library\MultipleRepository.cs" />
     <Compile Include="Repository\Library\ShortAnswerRepository.cs" />
     <Compile Include="Repository\Library\SingleTestRepository.cs" />
+    <Compile Include="Repository\Sys\MapOfFuncAndRoleRepository.cs" />
+    <Compile Include="Repository\Sys\OAFuncRepository.cs" />
+    <Compile Include="Repository\Sys\SysRoleRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

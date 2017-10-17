@@ -14,7 +14,7 @@
           $('#tab_menu-tabclose').click(function () {
               var currtab_title = $('.tabs-selected .tabs-inner span').text();
               $('#mainTab').tabs('close', currtab_title);
-              if ($(".tabs li").length == 0) {
+              if ($(".tabs li").length === 0) {
                   //open menu
                   $(".layout-button-right").trigger("click");
               }
@@ -36,7 +36,7 @@
               $('.tabs-inner span').each(function (i, n) {
                   if ($(this).parent().next().is('.tabs-close')) {
                       var t = $(n).text();
-                      if (t != currtab_title)
+                      if (t !== currtab_title)
                           $('#mainTab').tabs('close', t);
                   }
               });
@@ -44,7 +44,7 @@
           //关闭当前右侧的TAB
           $('#tab_menu-tabcloseright').click(function () {
               var nextall = $('.tabs-selected').nextAll();
-              if (nextall.length == 0) {
+              if (nextall.length === 0) {
                   $.messager.alert('提示', '前面没有了!', 'warning');
                   return false;
               }
@@ -60,7 +60,7 @@
           $('#tab_menu-tabcloseleft').click(function () {
 
               var prevall = $('.tabs-selected').prevAll();
-              if (prevall.length == 0) {
+              if (prevall.length === 0) {
                   $.messager.alert('提示', '后面没有了!', 'warning');
                   return false;
               }
@@ -122,4 +122,5 @@ function createFrame(url) {
                 }
             });
         });
-    });
+});
+

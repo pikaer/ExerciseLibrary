@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "后台管理系统";
 }
 
@@ -15,6 +15,7 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/themes/blue/css")
     @Scripts.Render("~/bundles/home")
+
 </head>
 <body class="easyui-layout">
     <div id="OverTimeLogin" class="easyui-dialog" data-options="closed:true,modal:true">
@@ -24,17 +25,18 @@
         <div class="define-head">
             <div class="define-logo">
                 <div id="LoginTopLine">后台管理系统</div>
-                <div id="LoginBotoomLine">MVC+EF5.0+EasyUI</div>
+                <div id="LoginBotoomLine"></div>
             </div>
             <div class="define-account">
-
+                
             </div>
         </div>
     </div>
     <div data-options="region:'west',split:true,title:'菜单列表'" style="width: 200px; height:100%; padding-top: 2px; background-color:#fff; overflow:auto">
-        <div id="RightTree" style=" background-color:#fff;">
-            <div class="panel-loading">加载中...</div>
+        <div id="westAccordion" class="easyui-accordion" data-options="fit:true,border:false">
+
         </div>
+        <div id="southPanel" data-options="region:'south',split:true">用户名：  &nbsp; 角色：  &nbsp; 职务：  &nbsp;  部门：</div>
     </div>
     <div data-options="region:'south',border:false" style="height: 20px;">
         <div class="define-bottom">

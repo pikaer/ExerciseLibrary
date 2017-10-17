@@ -1,0 +1,157 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <title></title>
+    <script language="javascript" type="text/javascript">
+        var selectRow;
+
+        $(function () {
+            var queryData = {
+                MAT_TYPEID: $("#hiddenId").val()
+            }
+
+            InitGrid1(queryData);
+            //InitCombobox();
+        })
+
+        function searchData() {
+            var queryData = {
+                SRealName: $("#txtRealName").val(),
+            }
+            InitGrid1(queryData);
+        }
+
+        function InitGrid1(queryData) {
+            $("#datagrid1").datagrid({
+                title: "",
+                rownumbers: true,
+                fit: true,
+                singleSelect: true,
+                nowrap: true,
+                striped: true,
+                border: false,
+                iconCls: 'icon icon-contract',
+                url: '/StaffManage/GetStaffInfosForSearch',
+                method: 'post',
+                autoRowHeight: false,
+                pagination: true,
+                queryParams: queryData,
+                columns: [[
+                    { field: 'Id', width: 50, title: "序号", sortable: true },
+                    { field: 'RealName', width: 100, title: "用户名", sortable: true },
+                    { field: 'LoginName', width: 100, title: "登录名", sortable: true },
+                    { field: 'DutyNames', width: 200, title: "职务", sortable: true },
+                    { field: 'QualifyTypeName', width: 150, title: "执业资格", sortable: true },
+                    { field: 'DepartName', width: 100, title: "部门", sortable: true },
+                ]],
+                toolbar: "#tb"
+            })
+        };
+        function addStaff() {
+            parent.ShowDialog(true, '/HR/StaffManage/AddEditStaffView', 590, 890, '增加员工', reloadGrid);
+        }
+
+        function editStaff() {
+            var row = $('#datagrid1').datagrid('getSelected');
+            if (!row) {
+                $.messager.alert('提示', '请选择要编辑的行!', 'info');
+                return;
+            }
+            selectRow = row;
+            parent.ShowDialog(true, '/HR/StaffManage/AddEditStaffView?id=' + row.Id, 590, 890, '编辑员工信息', reloadGrid);
+
+        }
+        function delStaff() {
+            var row = $('#datagrid1').datagrid('getSelected');
+            if (!row) {
+                $.messager.alert('提示', '请选择要删除的行!', 'info');
+                return;
+            }
+
+            $.messager.confirm('提示', row.RealName + ',是否删除?', function (r) {
+                if (r) {
+                    //ajax删除合同
+                    $.post("/HR/StaffManage/DeleteStaff",
+                           { Id: row.Id },
+                           function (data) {
+                               var info = eval('(' + data + ')');
+                               if (info.Success) {
+                                   reloadGrid();
+                               }
+                               else {
+                                   $.messager.alert('提示', info.Message, 'info');
+                               }
+                           })
+
+                }
+                else {
+                    return;
+                }
+            })
+        }
+        function ShowDialog(url, h, w, tit) {
+            //if (window.frames["ctrl"].location.href != url) {
+            window.frames["ctrl"].location.href = url;
+            $('#openDlg').dialog({ height: h, width: w, title: tit });
+            $('#openDlg').dialog('open');
+            $('#openDlg').window('center');
+        }
+
+        function reloadGrid() {
+            $('#datagrid1').datagrid('reload');
+        }
+        function CloseModelDlg() {
+            $('#openDlg').dialog('close');//关闭文本框
+        }
+
+        function clearData() {
+            $("#txtRealName").val("");
+        }
+    </script>
+</head>
+<body id="mainLayout" class="easyui-layout">
+    <input id="hiddenId" type="hidden" />
+    <div data-options="region:'center',border:false">
+        <table id="datagrid1"></table>
+    </div>
+    <div id="tb">
+        <table  cellpadding="0" cellspacing="0" style="width:100%">
+            <tr>
+                <td>
+                    @{
+                        var ctrl = ViewBag.RoleFunc.Get("add");
+                        if (ctrl != null)
+                        {
+                            <a href="#" class="easyui-linkbutton" iconcls="@ctrl.IconCls" plain="true" onclick="addStaff()">@ctrl.Text</a>
+                        }
+                    }
+                    @{
+                        var ctrl2 = ViewBag.RoleFunc.Get("edit");
+                        if (ctrl2 != null)
+                        {
+                            <a href="#" class="easyui-linkbutton" iconcls="@ctrl2.IconCls" plain="true" onclick="editStaff()">@ctrl2.Text</a>
+                        }
+                    }
+                    @{
+                        var ctrl3 = ViewBag.RoleFunc.Get("removeIt");
+                        if (ctrl3 != null)
+                        {
+                            <a href="#" class="easyui-linkbutton" iconcls="@ctrl3.IconCls" plain="true" onclick="delStaff()">@ctrl3.Text</a>
+                        }
+                    }
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    姓名: 
+                    <input class="easyui-validatebox textbox" style="width:170px" id="txtRealName" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" class="easyui-linkbutton" iconcls="icon icon-searchR" onclick="searchData()">查找</a>
+                    <a href="#" class="easyui-linkbutton" iconcls="icon icon-edit" onclick="clearData()">重置</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

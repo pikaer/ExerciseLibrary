@@ -16,13 +16,7 @@ namespace EFDAL.MapConfigurations.Library
     {
         public JudgeConfiguration()
         {
-            //this.HasRequired(a => a.ProjInfo).WithMany(b => b.TabProjResultCheckStep).HasForeignKey(b => b.ProjId);
-            //this.HasOptional(a => a.CurrentStaff).WithMany().HasForeignKey(b => b.CurrentStaffId);
-            //this.HasOptional(a => a.SelfChecker).WithMany().HasForeignKey(b => b.SelfCheckId);
-            //this.HasOptional(a => a.ReChecker).WithMany().HasForeignKey(b => b.ReCheckId);
-            //this.HasOptional(a => a.JudgeReviewer).WithMany().HasForeignKey(b => b.JudgeReviewId);
-            //this.HasOptional(a => a.Finalizerer).WithMany().HasForeignKey(b => b.FinalizerId);
-            //this.HasOptional(a => a.FlowInst).WithMany().HasForeignKey(b => b.FlowInstId);
+
         }
 
         public void RegistTo(ConfigurationRegistrar configurations)
