@@ -1,0 +1,11 @@
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\obj\Debug\EFModels.csprojResolveAssemblyReference.cache
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\obj\Debug\EFModels.csproj.CoreCompileInputs.cache
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\bin\Debug\EFModels.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\bin\Debug\EFModels.pdb
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\bin\Debug\EFUltilities.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\bin\Debug\EnCapEntityFrameWork.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\bin\Debug\Newtonsoft.Json.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\bin\Debug\System.ComponentModel.Annotations.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\bin\Debug\EnCapEntityFrameWork.pdb
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\obj\Debug\EFModels.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFModels\obj\Debug\EFModels.pdb

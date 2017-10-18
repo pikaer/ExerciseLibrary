@@ -15,7 +15,9 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/themes/blue/css")
     @Scripts.Render("~/bundles/home")
-
+    function updatePwd(){
+    parent.ShowDialog(true, '/HR/StaffManage/Index', 500, 1000, '招标代理完成情况登记', reloadGrid);
+    }
 </head>
 <body class="easyui-layout">
     <div id="OverTimeLogin" class="easyui-dialog" data-options="closed:true,modal:true">
@@ -34,9 +36,9 @@
     </div>
     <div data-options="region:'west',split:true,title:'菜单列表'" style="width: 200px; height:100%; padding-top: 2px; background-color:#fff; overflow:auto">
         <div id="westAccordion" class="easyui-accordion" data-options="fit:true,border:false">
-
+            <a href="javascript:void(0);" class="easyui-linkbutton" onclick="updatePwd()" data-options="plain:true,iconCls:'icon icon-key'">用户管理</a>
         </div>
-        <div id="southPanel" data-options="region:'south',split:true">用户名：  &nbsp; 角色：  &nbsp; 职务：  &nbsp;  部门：</div>
+       
     </div>
     <div data-options="region:'south',border:false" style="height: 20px;">
         <div class="define-bottom">

@@ -1,0 +1,10 @@
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\bin\Debug\EFBLL.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\bin\Debug\EFBLL.pdb
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\obj\Debug\EFBLL.csproj.CoreCompileInputs.cache
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\obj\Debug\EFBLL.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\obj\Debug\EFBLL.pdb
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\obj\Debug\EFBLL.csprojResolveAssemblyReference.cache
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\bin\Debug\EFModels.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\bin\Debug\Newtonsoft.Json.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\bin\Debug\EFUltilities.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFBLL\bin\Debug\EFModels.pdb

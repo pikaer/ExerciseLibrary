@@ -1,0 +1,13 @@
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\EFDAL.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\EFDAL.pdb
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\obj\Debug\EFDAL.csproj.CoreCompileInputs.cache
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\obj\Debug\EFDAL.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\obj\Debug\EFDAL.pdb
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\obj\Debug\EFDAL.csprojResolveAssemblyReference.cache
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\EFModels.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\EnCapEntityFrameWork.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\EntityFramework.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\EFModels.pdb
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\EnCapEntityFrameWork.pdb
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\Newtonsoft.Json.dll
+F:\Code\C#\MVC\ExerciseLibrary\EFDAL\bin\Debug\EFUltilities.dll
